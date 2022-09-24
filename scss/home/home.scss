@@ -1,0 +1,93 @@
+.home {
+    .hero {
+        height: 400px;
+        background-image: url('../../images/hero.png');
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .container {
+            color: white;
+            width: 40%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            .learn-more {
+                width: 120px;
+                padding: 5px 15px;
+                background-color: #79ADDC;
+            }
+        }
+    }
+    .promo-tours {
+        margin-bottom: 60px;
+        position: relative;
+        width: 100%;
+        height: 304px;
+        margin-top: -56px;
+        display: flex;
+        justify-content: space-around;
+        .card {
+            background-color: #fff;
+            height: 100%;
+            width: 236px;
+        }
+    }
+    .booking {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .container {
+            width: 80%;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            .title {
+                width: 100%;
+                margin: 30px;
+                h2 {}
+            }
+            form {
+                display: flex;
+                gap: 21px;
+                width: 100%;
+                flex-wrap: wrap;
+                justify-content: center;
+                input {
+                    height: 58px;
+                }
+                .name,
+                .country {
+                    width: 344px;
+                }
+                .email,
+                .hotel {
+                    width: 453px;
+                }
+                .check-in,
+                .check-out {
+                    width: 750px;
+                }
+                .adult,
+                .children,
+                .rooms {
+                    width: 103px;
+                }
+                .message {
+                    width: 100%;
+                    height: 192px;
+                }
+                button {
+                    height: 60.59px;
+                    width: 100%;
+                    padding: 5px 15px;
+                    background-color: #79ADDC;
+                    border: none;
+                    margin-bottom: 16px;
+                    border-radius: 50px;
+                }
+            }
+        }
+    }
+}
