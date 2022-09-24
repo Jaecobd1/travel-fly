@@ -23,13 +23,111 @@ p {
 
 .site-container {
   width: 1100px;
-  background-color: burlywood;
+  background-color: white;
   margin: 0 auto;
+}
+
+.card {
+  background-color: #fff;
+  height: 100%;
+  width: 236px;
+  position: relative;
+}
+.card .image {
+  width: 100%;
+  height: 100%;
+  background-color: #333;
+}
+.card .image img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+.card .info {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  left: 0px;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.4);
+  height: 100%;
+}
+.card .info h1 {
+  font-size: 60px;
+}
+.card .info h2 {
+  font-size: 30px;
+}
+.card .info .learn-more {
+  border-radius: 25px;
+}
+
+.learn-more {
+  text-transform: uppercase;
+  width: 130px;
+  padding: 5px 15px;
+  background-color: #79ADDC;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: 100;
+  font-size: 15px;
+  color: #fff;
+}
+
+.logo {
+  width: 95px;
+  height: 42px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  border: 3px solid white;
+}
+.logo .box h3 {
+  margin-left: -2px;
+  margin-bottom: -5px;
+  color: white;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: 100;
+  letter-spacing: 2.5px;
+}
+
+.calendar {
+  position: relative;
+}
+.calendar img {
+  position: absolute;
+  height: 18.99px;
+  right: 20.5px;
+  top: 19.5px;
 }
 
 .home .hero {
   height: 400px;
-  background-image: url("../../images/hero.png");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url("../../images/hero.jpeg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../../images/hero.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -39,6 +137,8 @@ p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  font-family: proxima-nova-condensed;
+  font-weight: 100;
 }
 .home .hero .container {
   color: white;
@@ -55,10 +155,10 @@ p {
           align-items: center;
   text-align: center;
 }
-.home .hero .container .learn-more {
-  width: 120px;
-  padding: 5px 15px;
-  background-color: #79ADDC;
+.home .hero .container h1 {
+  font-family: proxima-nova-condensed;
+  font-weight: 100;
+  font-size: 60px;
 }
 .home .promo-tours {
   margin-bottom: 60px;
@@ -71,13 +171,19 @@ p {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  font-family: proxima-nova, sans-serif;
+  font-weight: 200;
 }
-.home .promo-tours .card {
-  background-color: #fff;
-  height: 100%;
-  width: 236px;
+.home .promo-tours h1 {
+  font-weight: 200;
+}
+.home .promo-tours h2 {
+  font-weight: 100;
 }
 .home .booking {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  margin-bottom: 100px;
+  font-size: 18px;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -106,6 +212,11 @@ p {
   width: 100%;
   margin: 30px;
 }
+.home .booking .container .title h2 {
+  font-size: 60px;
+  font-family: proxima-nova, sans-serif;
+  font-weight: 200;
+}
 .home .booking .container form {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -120,6 +231,28 @@ p {
 }
 .home .booking .container form input {
   height: 58px;
+  border: 2px solid #79ADDC;
+  padding: 5px;
+}
+.home .booking .container form input::-webkit-input-placeholder {
+  font-size: 18px;
+  color: #000;
+}
+.home .booking .container form input::-moz-placeholder {
+  font-size: 18px;
+  color: #000;
+}
+.home .booking .container form input:-ms-input-placeholder {
+  font-size: 18px;
+  color: #000;
+}
+.home .booking .container form input::-ms-input-placeholder {
+  font-size: 18px;
+  color: #000;
+}
+.home .booking .container form input::placeholder {
+  font-size: 18px;
+  color: #000;
 }
 .home .booking .container form .name,
 .home .booking .container form .country {
@@ -143,6 +276,7 @@ p {
   height: 192px;
 }
 .home .booking .container form button {
+  margin-top: 37px;
   height: 60.59px;
   width: 100%;
   padding: 5px 15px;
@@ -169,24 +303,9 @@ nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-nav .logo {
-  width: 92px;
-  height: 42px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  border: 2px solid white;
-}
-nav .logo .box h3 {
-  margin-bottom: -5px;
-  color: white;
+  font-size: 15px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  z-index: 10;
 }
 nav .links {
   height: 42px;
@@ -200,9 +319,30 @@ nav .links {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  color: white;
+  color: #79ADDC;
 }
 nav .links a {
   text-decoration: none;
   color: white;
+}
+
+footer {
+  width: 100%;
+  height: 100px;
+  background-color: #79ADDC;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+}
+footer .copyright {
+  font-size: 12px;
+}
+footer .copyright p {
+  margin-bottom: 0;
 }

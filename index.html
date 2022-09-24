@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Travel Fly</title>
     <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="https://use.typekit.net/xav2xhk.css">
+    <link rel="stylesheet" href="https://use.typekit.net/xav2xhk.css">
 </head>
 
 <body>
@@ -38,15 +40,42 @@
                     <h1>travel-fly</h1>
                     <p><i>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
 Fugiat aliquid minus nemo sed est.</i></p>
-                    <div class="learn-more">Learn More</div>
+                    <div class="learn-more">READ MORE</div>
                 </div>
             </section>
             <section class="promo-tours">
                 <div class="card">
                     <div class="image">
-                        <img src="./images/" alt="">
+                        <img src="./images/tour-01.jpeg" alt="">
                     </div>
-                    <div class="info"></div>
+                    <div class="info">
+                        <h1>ISREAL</h1>
+                        <h2>from $1000</h2>
+
+                        <div class="learn-more">Learn More</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="image">
+                        <img src="./images/tour-02.jpeg" alt="">
+                    </div>
+                    <div class="info">
+                        <h1>U.S.A</h1>
+                        <h2>from $1500</h2>
+
+                        <div class="learn-more">Learn More</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="image">
+                        <img src="./images/tour-03.jpeg" alt="">
+                    </div>
+                    <div class="info">
+                        <h1>Austrailia</h1>
+                        <h2>from $1800</h2>
+
+                        <div class="learn-more">Learn More</div>
+                    </div>
                 </div>
             </section>
             <sections class="booking">
@@ -57,18 +86,43 @@ Fugiat aliquid minus nemo sed est.</i></p>
                     <form>
                         <input type="text" placeholder="name..." name="name" class="name"><input type="text" placeholder="email..." name="email" class="email"><input type="text" placeholder="country..." name="country" class="country"><input type="text"
                             class="hotel" placeholder="hotel..." name="hotel">
-                        <label for="check-in">Check-in: </label> <input name="check-in" class="check-in" type="datetime" placeholder="05/10/2020">
-                        <label for="check-out">Check-out:</label> <input type="text" name="check-out" class="check-out" placeholder="5/20/2020">
-                        <label for="adult">Adult</label> <input type="number" class="adult" name="adult" value=" 1 ">
-                        <label for="children ">Children</label> <input type="number " class="children" name="children " value="0 ">
-                        <label for="rooms ">Rooms</label> <input type="number " class="rooms" name="rooms " value="1 "><input type="text " class="message" placeholder="message...">
+                        <label for="check-in">Check-in: </label>
+                        <div class="calendar">
+                            <input name="check-in" class="check-in" type="date">
+                            <img src="./images/calendar.svg" alt="">
+                        </div>
+                        <label for="check-out">Check-out:</label>
+
+                        <div class="calendar"> <input type="date" name="check-out" class="check-out">
+                            <img src="./images/calendar.svg" alt=""> </div>
+
+                        <label for="adult">Adult</label>
+                        <div class="calendar"><input type="number" class="adult" name="adult" value=" 1 ">
+                            <img src="./images/down-arrow.svg" alt=""></div>
+                        <label for="children ">Children</label>
+                        <div class="calendar"><input type="number " class="children" name="children " value="0 ">
+                            <img src="./images/down-arrow.svg" alt=""></div>
+                        <label for="rooms ">Rooms</label>
+                        <div class="calendar"><input type="number" class="rooms" name="rooms " value="1 ">
+                            <img src="./images/down-arrow.svg" alt=""></div><input type="text " class="message" placeholder="message...">
+
                         <button>SUBMIT</button>
                     </form>
                 </div>
 
             </sections>
         </div>
-        <footer></footer>
+        <footer>
+            <div class="logo">
+                <div class="box">
+                    <h3>travel-fly</h3>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy Copyright 2019 travel fly. All rights reserved</p>
+            </div>
+            <div class="socials"></div>
+        </footer>
     </div>
 </body>
 
